@@ -6,36 +6,60 @@ public class SanctionOutputDto {
 	private String paymentStartDate;
 	private String loanClosureDate;
 	private Double monthlyPayment;
+
+	public SanctionOutputDto(Double loanAmountSanctioned, Double termOfLoan, String paymentStartDate,
+			String loanClosureDate, Double monthlyPayment) {
+		super();
+		this.loanAmountSanctioned = loanAmountSanctioned;
+		this.termOfLoan = termOfLoan;
+		this.paymentStartDate = paymentStartDate;
+		this.loanClosureDate = loanClosureDate;
+		this.monthlyPayment = monthlyPayment;
+	}
+
+	public SanctionOutputDto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Double getLoanAmountSanctioned() {
 		return loanAmountSanctioned;
 	}
+
 	public void setLoanAmountSanctioned(Double loanAmountSanctioned) {
 		this.loanAmountSanctioned = loanAmountSanctioned;
 	}
+
 	public Double getTermOfLoan() {
 		return termOfLoan;
 	}
+
 	public void setTermOfLoan(Double termOfLoan) {
 		this.termOfLoan = termOfLoan;
 	}
+
 	public String getPaymentStartDate() {
 		return paymentStartDate;
 	}
+
 	public void setPaymentStartDate(String paymentStartDate) {
 		this.paymentStartDate = paymentStartDate;
 	}
+
 	public String getLoanClosureDate() {
 		return loanClosureDate;
 	}
+
 	public void setLoanClosureDate(String loanClosureDate) {
 		this.loanClosureDate = loanClosureDate;
 	}
+
 	public Double getMonthlyPayment() {
 		return monthlyPayment;
 	}
+
 	public void setMonthlyPayment(Double monthlyPayment) {
 		this.monthlyPayment = monthlyPayment;
 	}
-	
-	
+
 }
